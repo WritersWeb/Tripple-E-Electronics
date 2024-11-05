@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tripple E Electronics</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/favicon.jpg" type="image/x-icon">
+</head>
+<body>
+    <div class="logo">
+        <h2>Tripple E Electronics</h2>
+    </div>
+    <div class="header">
+    <div class="menu-container">
+        <div class="hamburger" id="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="navigation " id="navigation">
+            <button class="close-button" id="close-button">&times;</button>
+            <div style="display: flex;flex-direction: column;">
+                <a href="index.html">HOME</a>
+                <a href="Products.html">PRODUCTS</a>
+                <a href="About.html">ABOUT</a>
+                <a href="Contact.html">CONTACT US</a>
+            </div>
+        </nav>
+    </div>
+</div>
+    <div class="links">        
+        <div>  
+            <a href="index.html">HOME</a>
+            <a href="Products.html">PRODUCTS</a>
+            <a href="About.html">ABOUT</a>
+            <a href="Contact.html">CONTACT US</a>
+        </div>
+    </div>
+    <section class="contact">
+        <div class="contain">
+            <h2>Contact Us</h2>
+            <div class="contact-wrapper">
+                <div class="contact-form">
+                    <h3>Send us a Message</h3>
+                    <form>
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Enter Your Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Enter Your Email">
+                        </div>
+                       
+                        <button><i style="margin-right: 10px;" class="fas fa-envelope"></i><a style="text-decoration: none; color: white;" href="mailto:TRIPPLEEELECTRONICS19@YAHOO.COM">Send Email</a></button>
+                    </form>
+                </div>
+                </div>
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p><i class="fas fa-phone"></i>+254720310183</p>
+                    <p><i class="fas fa-envelope"></i>TRIPPLEEELECTRONICS19@YAHOO.COM</p>
+                    <p><i class="fas fa-map-marker-alt"></i>Kisii Town, Kisii, Kenya</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <iframe  class="map";  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.5429329551225!2d34.7731796!3d-0.6731868!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182b3be7d17d8bd7%3A0x660a0775968b5f93!2sTripple%20e%20electronics!5e0!3m2!1sen!2ske!4v1730623259232!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+   <!-------foooter-------->
+     <div class="footer">
+        <div class="footer-space">
+                <div class="footer-col-2">
+                    <img class="img1" src="images/3logo.png" >
+                    <p>"Impressive variety and knowledgeable staff. This electronics shop always delivers excellent products and exceptional service."</p>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a style="color: lime;" href="https://wa.me/+254720310183" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <br>
+                        <a style="color: #0082e6;" href="https://www.facebook.com/sonkole" target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </div>  
+                </div>
+        </div>
+            <hr>
+            <p class="Copyright">&#169Copyright 2024-Tripple E Electronics-All Rights Reserved.</p>
+        </div> 
+    <script>
+        const hamburger = 
+        document.getElementById('hamburger');
+        const navigation = 
+        document.getElementById('navigation');
+        const closeButton = 
+        document.getElementById('close-button');
+
+    hamburger.addEventListener('click', () => {
+    navigation.classList.add('open');
+    hamburger.classList.add('open');});
+
+    closeButton.addEventListener('click', () => {
+    navigation.classList.remove('open');
+    hamburger.classList.remove('open');});
+
+    </script>
+</body>
+</html>

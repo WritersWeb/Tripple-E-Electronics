@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/favicon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Tripple E Electronics</title>
+</head>
+<body>
+    <div class="logo">
+        <h2>Tripple E Electronics</h2>
+    </div>
+    <div class="header">
+    <div class="menu-container">
+        <div class="hamburger" id="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="navigation " id="navigation">
+            <button class="close-button" id="close-button">&times;</button>
+            <div style="display: flex;flex-direction: column;">
+                <a href="index.html">HOME</a>
+                <a href="Products.html">PRODUCTS</a>
+                <a href="About.html">ABOUT</a>
+                <a href="Contact.html">CONTACT US</a>
+            </div>
+        </nav>
+    </div>
+</div>
+    <div class="links">        
+        <div>  
+            <a href="index.html">HOME</a>
+            <a href="Products.html">PRODUCTS</a>
+            <a href="About.html">ABOUT</a>
+            <a href="Contact.html">CONTACT US</a>
+        </div>
+    </div>
+    
+    <div class="sides">
+        <p>Welcome to Tripple E Electronics, your trusted partner in innovative technology solutions. We specialize in high-quality electronic products designed to enhance everyday life, delivering reliability and cutting-edge performance for all your needs.</p>
+        <img style="width: 24rem;padding-top: 10px; padding-bottom: 10px; height: 60vh;" src="images/slide1.jpg" class="left">
+    </div>
+    <div class="sides1">
+            <marquee behavior="scroll" direction="top" scrollamount="10" class="right"> 
+                <img style="width: 30rem;" src="images/slide 6.jpg">
+                <img style="width: 30rem;" src="images/slide 5.jpg">
+                <img src="images/slide2.jpg" >
+                <img src="images/slide3.jpg">
+                <img src="images/slide4.jpg">
+                <img src="images/slide7.jpg">
+                <img src="images/slide8.jpg">
+                <img src="images/slide9.jpg">
+                <img src="images/slide10.jpg">
+                <img src="images/slide11.jpg">
+                <img src="images/slide12.jpg">
+
+                
+            </marquee>
+    </div>
+ <!-------foooter-------->
+ <div class="footer">
+    <div class="footer-space">
+            <div class="footer-col-2">
+                <img class="img1" src="images/3logo.png" >
+                <p>"Impressive variety and knowledgeable staff. This electronics shop always delivers excellent products and exceptional service."</p>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a style="color: lime;" href="https://wa.me/+254720310183" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <br>
+                    <a style="color: #0082e6;" href="https://www.facebook.com/sonkole" target="_blank">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </div>  
+            </div>
+    </div>
+        <hr>
+        <p class="Copyright">&#169Copyright 2024-Tripple E Electronics-All Rights Reserved.</p> <br>
+    </div> 
+    <script>
+        const hamburger = 
+        document.getElementById('hamburger');
+        const navigation = 
+        document.getElementById('navigation');
+        const closeButton = 
+        document.getElementById('close-button');
+
+    hamburger.addEventListener('click', () => {
+    navigation.classList.add('open');
+    hamburger.classList.add('open');});
+
+    closeButton.addEventListener('click', () => {
+    navigation.classList.remove('open');
+    hamburger.classList.remove('open');});
+    </script>
+</body>
+</html> 
