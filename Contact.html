@@ -105,6 +105,29 @@
     navigation.classList.remove('open');
     hamburger.classList.remove('open');});
 
+        <button id="callButton">Call Kenya</button>
+
+<script>
+  const Twilio = require('twilio');
+
+  const accountSid = 'YOUR_ACCOUNT_SID';
+  const authToken = 'YOUR_AUTH_TOKEN';
+
+  const client = new Twilio(accountSid, authToken);
+
+  document.getElementById('callButton').addEventListener('click', () => {
+    const phoneNumber = '+254720310183'; // Replace with the Kenyan phone number
+
+    client.calls.create({
+      url: 'http://yourserver.com/voice-response.xml', // URL of your TwiML app
+      to: phoneNumber,
+      from: '+1234567890' // Your Twilio number
+    })
+    .then(call => console.log(call.sid))
+    .catch(error => console.error(error));
+  });
+</script>
+
     </script>
 </body>
 </html>
