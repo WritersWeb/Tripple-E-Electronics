@@ -188,14 +188,13 @@ nav div a:active{
     padding: 50px 0;
 }
 .col-2 h1{
-    font-size: 50px;
-    line-height: 60px;
+    font-size: 24px;
     margin: 25px 0;
     color: white;
 }
 .col-2 p{
     color: white;
-    font-size: 24px;
+    font-size: 18px;
 }
 .btn{
     display: inline-block;
