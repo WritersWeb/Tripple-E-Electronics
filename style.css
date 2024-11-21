@@ -774,4 +774,10 @@ select:focus{
  .top:hover p{
     color: white;
  }
+
+ #back{
+    margin-left: 24px;
+    margin-top: 24px;
+    font-size: 24px;
+ }
   
